@@ -1,0 +1,22 @@
+{
+
+    "manifest_version": 2,
+    "name": "OPT-IN",
+    "version": "1.0",
+  
+    "description": "OPT-IN",
+  
+    "icons": {
+      "48": "Icon/icon1.png",
+      "96": "Icon/icon1.png"
+    },
+    "permission":["<all_urls>","tabs"],
+        
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["code.js"]
+      }
+    ]
+  }
